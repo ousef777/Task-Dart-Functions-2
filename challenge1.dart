@@ -3,6 +3,9 @@
  * Create a function called `printName`
  * - that prints your name on the screen.
  */
+void printName(String name) {
+  print("Name: $name");
+}
 
 /**
  * Task 2:
@@ -11,6 +14,9 @@
  * - and prints the age on the screen.
  * - Age = current year - birth
  */
+void printAge(int birth) {
+  print("Age: ${2024 - birth}");
+}
 
 /**
  * Task 3:
@@ -22,6 +28,12 @@
  * -- fr: it should print `Bonjour NAME`
  * -- tr: it should print `Merhaba NAME`
  */
+void printHello(String name, String language) {
+  if (language == 'en') print("Hello $name");
+  else if (language == 'es') print("Hola $name");
+  else if (language == 'fr') print("Bonjour $name");
+  else if (language == 'tr') print("Merhaba $name");
+}
 
 /**
  * Task 4:
@@ -29,3 +41,6 @@
  * - that takes two numbers as parameters,
  * - and prints out the bigger number
  */
+void printMax(int a, int b) {
+  print((a > b)? a : b);
+}
