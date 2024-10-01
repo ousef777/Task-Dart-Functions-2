@@ -29,10 +29,12 @@ void printAge(int birth) {
  * -- tr: it should print `Merhaba NAME`
  */
 void printHello(String name, String language) {
-  if (language == 'en') print("Hello $name");
-  else if (language == 'es') print("Hola $name");
-  else if (language == 'fr') print("Bonjour $name");
-  else if (language == 'tr') print("Merhaba $name");
+  switch(language) {
+    case "en": print("Hello $name");
+    case "es": print("Hola $name");
+    case "fr": print("Bonjour $name");
+    case "tr": print("Merhaba $name");
+  }
 }
 
 /**
