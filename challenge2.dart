@@ -22,7 +22,7 @@ void greet(String name) {
  */
 bool isOdd(int n) {
   // Your code here
-  return n % 2 == 0;
+  return n % 2 != 0;
 }
 
 /**
